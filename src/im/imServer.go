@@ -1,4 +1,4 @@
-package main
+package im
 
 import (
     "log"
@@ -25,7 +25,7 @@ func init() {
     log.Println("[IM] Remote: " + configs["host"] + " : " + configs["port"])
 }
 
-func main() {
+func imServer() {
     // 开启多核模式
     runtime.GOMAXPROCS(runtime.NumCPU())
 
